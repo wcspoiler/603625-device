@@ -2,9 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <!--
     <link rel="stylesheet" href="css/style.css">
-    -->
     <title>Device</title>
   </head>
 
@@ -14,6 +12,7 @@
           <a class="logo-icon" href="index.html">
             <img src="img/logo-icon.svg" width="164" height="35" alt="Device">
           </a>
+          
           <div class="user-navigation">
             <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
               <span class="search-icon"></span>
@@ -35,33 +34,32 @@
             </div>
           </div>
 
-          <ul class="site-navigation">
-            <li>
-                <a class="catalog-item" href="#">Каталог товаров</a>
-                <span class="button nav-button nav-button-extend"></span>
-                <ul class="catalog-list">
-                  <li><a href="#">Виртуальная реальность</a></li>
-                  <li><a href="catalog.html">Моноподы для селфи</a></li>
-                  <li><a href="#">Экшн-камеры</a></li>
-                </ul>
-                <ul class="catalog-list">
-                  <li><a href="#">Фитнесс-браслеты</a></li>
-                  <li><a href="#">Умные часы</a></li>
-                </ul>
-                <ul class="catalog-list">
-                  <li><a href="#">Квадрокоптеры</a></li>
-                </ul></li>
+          <div class="site-navigation-wrapper">
+              <ul class="site-navigation">
+              <li class="site-navigation-item">
+                  <a class="site-navigation-link" href="catalog.html">Каталог товаров</a>
+                  <span class="button nav-button nav-button-extend"></span>
+                  <ul class="sub-menu">
+                    <li><a class="catalog-link" href="#">Виртуальная реальность</a></li>
+                    <li><a class="catalog-link" href="catalog.html">Моноподы для селфи</a></li>
+                    <li><a class="catalog-link" href="#">Экшн-камеры</a></li>
+                    <li><a class="catalog-link" href="#">Фитнесс-браслеты</a></li>
+                    <li><a class="catalog-link" href="#">Умные часы</a></li>
+                    <li><a class="catalog-link" href="#">Квадрокоптеры</a></li>
+                  </ul>
+              </li>
+              <li class="site-navigation-item">
+                  <a class="site-navigation-link" href="#">Доставка</a>
+              </li>
+              <li class="site-navigation-link">
+                  <a class="site-navigation-link" href="#">Гарантия</a>
+              </li>
+              <li class="site-navigation-link">
+                  <a class="site-navigation-link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </div>
 
-              <li>
-                  <a class="catalog-item" href="#">Доставка</a>
-              </li>
-              <li>
-                  <a class="catalog-item" href="#">Гарантия</a>
-              </li>
-              <li>
-                  <a class="catalog-item" href="#">Контакты</a>
-              </li>
-          </ul>
       </nav>
     </header>
 
@@ -161,14 +159,14 @@
           </div>
 
           <ul class="site-navigation">
-              <li>
-                  <a class="catalog-item" href="#">Доставка</a>
+              <li class="site-navigation-item">
+                  <a class="site-navigation-link" href="#">Доставка</a>
               </li>
               <li class="site-navigation-item">
-                  <a class="catalog-item" href="#">Гарантия</a>
+                  <a class="site-navigation-link" href="#">Гарантия</a>
               </li>
               <li class="site-navigation-item">
-                  <a class="catalog-item" href="#">Контакты</a>
+                  <a class="site-navigation-link" href="#">Контакты</a>
               </li>
           </ul>
         </nav>

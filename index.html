@@ -2,9 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <!--
     <link rel="stylesheet" href="css/style.css">
-  -->
     <title>Device</title>
   </head>
 
@@ -14,12 +12,14 @@
           <a class="logo-con" href="index.html">
             <img src="img/logo-icon.svg" width="164" height="35" alt="Device">
           </a>
+
           <div class="user-navigation">
             <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
               <span class="search-icon"></span>
               <label class="visually-hidden" for="search">Поиск по сайту</label>
               <input type="search" name="search" placeholder="Поиск по сайту" id="search">
             </form>
+
             <div class="account">
               <span class="account-icon"></span>
               <a href="#">Войти</a>
@@ -34,33 +34,31 @@
             </div>
           </div>
 
-          <ul class="site-navigation">
-            <li>
-                <a class="site-navigation-item" href="#">Каталог товаров</a>
+        <div class="site-navigation-wrapper">
+            <ul class="site-navigation">
+            <li class="site-navigation-item">
+                <a class="site-navigation-link" href="#">Каталог товаров</a>
                 <span class="button nav-button nav-button-extend"></span>
-                <ul class="catalog-list">
-                  <li><a class="catalog-item" href="#">Виртуальная реальность</a></li>
-                  <li><a class="catalog-item" href="catalog.html">Моноподы для селфи</a></li>
-                  <li><a class="catalog-item" href="#">Экшн-камеры</a></li>
+                <ul class="sub-menu">
+                  <li><a class="catalog-link" href="#">Виртуальная реальность</a></li>
+                  <li><a class="catalog-link" href="catalog.html">Моноподы для селфи</a></li>
+                  <li><a class="catalog-link" href="#">Экшн-камеры</a></li>
+                  <li><a class="catalog-link" href="#">Фитнесс-браслеты</a></li>
+                  <li><a class="catalog-link" href="#">Умные часы</a></li>
+                  <li><a class="catalog-link" href="#">Квадрокоптеры</a></li>
                 </ul>
-                <ul class="catalog-list">
-                  <li><a class="catalog-item" href="#">Фитнесс-браслеты</a></li>
-                  <li><a class="catalog-item" href="#">Умные часы</a></li>
-                </ul>
-                <ul class="catalog-list">
-                  <li><a class="catalog-item" href="#">Квадрокоптеры</a></li>
-                </ul></li>
-
-              <li>
-                  <a class="catalog-item" href="#">Доставка</a>
-              </li>
-              <li>
-                  <a class="catalog-item" href="#">Гарантия</a>
-              </li>
-              <li>
-                  <a class="catalog-item" href="#">Контакты</a>
-              </li>
+            </li>
+            <li class="site-navigation-item">
+                <a class="site-navigation-link" href="#">Доставка</a>
+            </li>
+            <li class="site-navigation-link">
+                <a class="site-navigation-link" href="#">Гарантия</a>
+            </li>
+            <li class="site-navigation-link">
+                <a class="site-navigation-link" href="#">Контакты</a>
+            </li>
           </ul>
+        </div>
       </nav>
     </header>
 
@@ -119,14 +117,14 @@
           </div>
 
           <ul class="site-navigation">
-              <li>
-                  <a class="catalog-item" href="#">Доставка</a>
+              <li class="site-navigation-item">
+                  <a class="site-navigation-link" href="#">Доставка</a>
               </li>
-              <li>
-                  <a class="catalog-item" href="#">Гарантия</a>
+              <li class="site-navigation-item">
+                  <a class="site-navigation-link" href="#">Гарантия</a>
               </li>
-              <li>
-                  <a class="catalog-item" href="#">Контакты</a>
+              <li class="site-navigation-item">
+                  <a class="site-navigation-link" href="#">Контакты</a>
               </li>
           </ul>
         </nav>
