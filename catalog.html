@@ -15,11 +15,11 @@
             <img src="img/logo-icon.svg" width="164" height="35" alt="Device">
           </a>
           <div class="user-navigation">
-            <!-- Строка поиска - явно форма, но пусть пока будет ссылка-->
-            <div class="search">
+            <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
               <span class="search-icon"></span>
-              <a href="#">Поиск по сайту</a>
-            </div>
+              <label class="visually-hidden" for="search">Поиск по сайту</label>
+              <input type="search" name="search" placeholder="Поиск по сайту" id="search">
+            </form>
             <div class="account">
               <span class="account-icon"></span>
               <a class="username" href="#">Валентин Петухов</a>
@@ -74,7 +74,29 @@
       </ul>
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
-        <!-- Форма -->
+        <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
+          <fieldset>
+            <legend>Цвет</legend>
+            <label for="black">Чёрный</label>
+            <input type="checkbox" name="black" value="black" id="black" checked>
+            <label for="white">Белый</label>
+            <input type="checkbox" name="white" value="black" id="white">
+            <label for="blue">Синий</label>
+            <input type="checkbox" name="blue" value="blue" id="blue" checked>
+            <label for="red">Красный</label>
+            <input type="checkbox" name="red" value="red" id="red" checked>
+            <label for="pink">Розовый</label>
+            <input type="checkbox" name="pink" value="pink" id="pink">
+          </fieldset>
+          <fieldset>
+            <legend>Bluetooth</legend>
+            <label for="yes">Есть</label>
+            <input type="radio" name="yes" id="yes" checked>
+            <label for="no">Нет</label>
+            <input type="radio" name="no" id="no">
+          </fieldset>
+          <button class="button" type="submit">Показать</button>
+        </form>
       </section>
       <section class="catalog">
         <h2 class="visually-hidden">Список моноподов</h2>
