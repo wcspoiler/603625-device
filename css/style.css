@@ -1,3 +1,12 @@
+/*
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensans.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+*/
+
 @font-face {
   font-family: "Gilroy Extra Bold";
   src: url("../fonts/gilroyextrabold.woff2") format("woff2");
@@ -9,11 +18,13 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 15px;
   line-height: 30px;
   font-weight: normal;
   color: #464646;
+
+  background-color: #ffffff;
 }
 
 a {
@@ -25,59 +36,130 @@ a {
   background-color: #f7e296;
 }
 
-.user-navigation a {
+.user-navigation a, a.button-logout {
   font-size: 15px;
   color: #000000;
   line-height: 30px;
   letter-spacing: 2px;
 }
 
-.search-form {
+.site-navigation a:hover,
+.user-navigation a:hover {
+  opacity: 0.6;
+}
+
+.site-navigation a:active {
+  opacity: 0.3;
+}
+
+.button-logout {
+  opacity: 0.3;
+}
+
+.button-logout:hover {
+  opacity: 0.6;
+}
+
+.logo-icon:hover {
+  opacity: 0.6;
+}
+
+.logo-icon:active {
+  opacity: 0.3;
+}
+
+.search-line {
+  opacity: 0.3;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.search-line:hover {
+  opacity: 0.6;
+}
+
+.account a:hover,
+.compare a:hover,
+.cart a:hover {
+  opacity: 0.6;
+}
+
+.account a:active,
+.compare a:active,
+.cart a:active {
+  opacity: 0.3;
 }
 
 .search-icon {
   width: 16px;
   height: 16px;
+
+  margin-right: 18px;
+  margin-left: 18px;
+
   background-image: url("../img/search-icon.svg");
   background-repeat: no-repeat;
   background-position: center;
   display: inline-block;
 }
 
-.account-icon {
+.account-icon, .account-icon-footer {
   width: 13px;
   height: 12px;
+
+  margin-right: 12px;
+  margin-left: 12px;
+
   background-image: url("../img/account-icon.svg");
   background-repeat: no-repeat;
   background-position: center;
   display: inline-block;
 }
 
-.compare-icon {
+.account-icon-footer {
+  background-image: url("../img/account-icon-footer.svg");
+}
+
+
+.compare-icon, .compare-icon-footer {
   width: 10px;
   height: 10px;
+
+  margin-right: 12px;
+  margin-left: 12px;
+
   background-image: url("../img/compare-icon.svg");
   background-repeat: no-repeat;
   background-position: center;
   display: inline-block;
 }
 
-.cart-icon {
+.compare-icon-footer {
+  background-image: url("../img/compare-icon-footer.svg");
+}
+
+.cart-icon, .cart-icon-footer {
   width: 12px;
   height: 12px;
+
+  margin-right: 12px;
+  margin-left: 12px;
+
   background-image: url("../img/cart-icon.svg");
   background-repeat: no-repeat;
   background-position: center;
   display: inline-block;
 }
 
-site-navigation-wrapper {
-
+.cart-icon-footer {
+  background-image: url("../img/cart-icon-footer.svg");
 }
+
 
 .site-navigation, .sub-menu {
   list-style: none;
-  font-family: "Gilroy Extra Bold", "Open Sans", sans-serif;
+  font-family: "Gilroy Extra Bold", "Arial", sans-serif;
 }
 
 .site-navigation a {
@@ -106,13 +188,6 @@ section h2 {
   letter-spacing: 4px;
 }
 
-section p {
-  font-size: 15px;
-  line-height: 30px;
-
-}
-
-
 .info a {
   font-size: 16px;
   font-family: "Gilroy Extra Bold", "Open Sans", sans-serif;
@@ -120,36 +195,77 @@ section p {
   color: #000000;
 }
 
-a.button {
+.main-footer {
+  background-color: #464646;
+}
+
+.footer-navigation a {
+  font-size: 15px;
+  color: #ffffff;
+  line-height: 30px;
+  letter-spacing: 2px;
+}
+
+.footer-navigation a.user-navigation {
+  opacity: 0.7;
+}
+
+.footer-navigation a.user-navigation:hover {
+  opacity: 1.0;
+}
+
+a.button, button.modal-map {
   width: 260px;
-  height: 15px;
+
+  padding-left: auto;
+  padding-right: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
   font-size: 18px;
   text-align: center;
-  font-family: "Gilroy Extra Bold", "Open Sans", sans-serif;
+  vertical-align: middle;
+  display: block;
+
+  font-family: "Gilroy Extra Bold", "Arial", sans-serif;
   text-transform: uppercase;
   line-height: 24px;
   color: #000000;
   letter-spacing: 5px;
+
   background-image: url("../img/bar-yellow.png");
   background-repeat: no-repeat;
   background-position: center;
-  vertical-align: middle;
 }
 
 button {
   width: 260px;
-  height: 15px;
-  text-align: center;
+
+  padding-left: auto;
+  padding-right: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
   font-size: 18px;
-  font-family: "Gilroy Extra Bold", "Open Sans", sans-serif;
+  text-align: center;
+  vertical-align: middle;
+  display: block;
+  border: none;
+  background-color: transparent;
+
+  font-family: "Gilroy Extra Bold", "Arial", sans-serif;
   text-transform: uppercase;
   line-height: 24px;
   color: #000000;
   letter-spacing: 5px;
+
   background-image: url("../img/bar-yellow.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: auto;
+}
+
+a.button:hover, button:hover {
+  background-color: #f0c52e;
+  background-size: contain;
+  background-image: none;
 }
 
 .modal-close {

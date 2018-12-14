@@ -2,48 +2,49 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Device</title>
   </head>
 
   <body>
-    <header class="main-header">
-      <nav class="main-navigation">
-          <a class="logo-icon" href="index.html">
-            <img src="img/logo-icon.svg" width="164" height="35" alt="Device">
-          </a>
+      <header class="main-header">
+        <nav class="main-navigation">
+            <a class="logo-icon" href="index.html">
+              <img src="img/logo-icon.svg" width="164" height="35" alt="Device">
+            </a>
 
-          <div class="user-navigation">
-            <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-              <span class="search-icon"></span>
-              <label class="visually-hidden" for="search">Поиск по сайту</label>
-              <input type="search" name="search" placeholder="Поиск по сайту" id="search">
-            </form>
-            <div class="account">
-              <span class="account-icon"></span>
-              <a class="username" href="#">Валентин Петухов</a>
-              <a class="button button-logout" href="#">Выйти</a>
+            <div class="user-navigation">
+              <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+                <span class="search-icon"></span>
+                <label class="visually-hidden" for="search">Поиск по сайту</label>
+                <input class="search-line" type="search" name="search" placeholder="Поиск по сайту" id="search">
+              </form>
+
+              <div class="account">
+                <a href="#"><span class="account-icon"></span>Войти</a>
+                <a class="username" href="#">Валентин Петухов</a>
+                <a class="button-logout" href="#">Выйти</a>
+              </div>
+              <div class="compare">
+                <a href="#"><span class="compare-icon"></span>Сравнить</a>
+              </div>
+              <div class="cart">
+                <a href="#"><span class="cart-icon"></span>Корзина</a>
+              </div>
             </div>
-            <div class="compare">
-              <span class="compare-icon"></span>
-              <a href="#">Сравнить</a>
-            </div>
-            <div class="cart">
-              <span class="cart-icon"></span>
-              <a href="#">Корзина</a>
-            </div>
-          </div>
 
           <div class="site-navigation-wrapper">
               <ul class="site-navigation">
               <li class="site-navigation-item">
-                  <a class="site-navigation-link" href="catalog.html">Каталог товаров</a>
+                  <a class="site-navigation-link" href="#">Каталог товаров</a>
                   <span class="button nav-button nav-button-extend"></span>
                   <ul class="sub-menu">
                     <li><a class="catalog-link" href="#">Виртуальная реальность</a></li>
                     <li><a class="catalog-link" href="catalog.html">Моноподы для селфи</a></li>
                     <li><a class="catalog-link" href="#">Экшн-камеры</a></li>
-                    <li><a class="catalog-link" href="#">Фитнесс-браслеты</a></li>
+                    <li><a class="catalog-link" href="#">Фитнес-браслеты</a></li>
                     <li><a class="catalog-link" href="#">Умные часы</a></li>
                     <li><a class="catalog-link" href="#">Квадрокоптеры</a></li>
                   </ul>
@@ -59,8 +60,8 @@
               </li>
             </ul>
           </div>
+        </nav>
 
-      </nav>
     </header>
 
     <main class="container">
