@@ -181,14 +181,14 @@ a {
   opacity: 0.3;
 }
 
-section h2 {
+.info h2, .contacts h2, .modal-feedback h2 {
   font-size: 47px;
   line-height: 48px;
   font-weight: 800px;
   letter-spacing: 4px;
 }
 
-.info a {
+.partners-item {
   font-size: 16px;
   font-family: "Gilroy Extra Bold", "Open Sans", sans-serif;
   line-height: 40px;
@@ -268,7 +268,7 @@ section h2 {
   background-image: url("../img/social-button-tw.svg");
 }
 
-a.button, button.modal-map {
+.button, button.modal-map {
   width: 260px;
 
   padding-left: auto;
@@ -278,7 +278,8 @@ a.button, button.modal-map {
   font-size: 18px;
   text-align: center;
   vertical-align: middle;
-  display: block;
+  display: inline-block;
+  box-sizing: border-box;
 
   font-family: "Gilroy Extra Bold", "Arial", sans-serif;
   text-transform: uppercase;
@@ -291,7 +292,7 @@ a.button, button.modal-map {
   background-position: center;
 }
 
-button {
+.modal-feedback .button, .filters .button {
   width: 260px;
 
   padding-left: auto;
@@ -314,15 +315,16 @@ button {
   background-image: url("../img/bar-yellow.png");
   background-repeat: no-repeat;
   background-position: center;
+  outline: none;
 }
 
-a.button:hover, button:hover {
+.button:hover, button:hover {
   background-color: #f0c52e;
-  background-size: contain;
+  background-size: auto;
   background-image: none;
 }
 
-a.button:active, button:active {
+.button:active, button:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
